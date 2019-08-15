@@ -1,0 +1,8 @@
+{
+  "name": "meteor-inline-text-edit",
+  "version": "1.0.0",
+  "description": "Meteor inline text editor",
+  "main": "index.js",
+  "author": "Advers Inc.",
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+<template name="InlineTextEditComponent">
+	<div class="component--inline-text-edit">
+		{{#unless (pageState 'editing')}}
+			<span class="plain">{{value}}</span>
+
+			{{#if appendText}}
+				<span class="{{appendTextClass}}">{{appendText}}</span>
+			{{/if}}
+		{{else}}
+			<textarea class="form-control inline-editable editing"
+						name="{{name}}" style="height: {{textareaHeight}}px">{{textareaValue}}</textarea>
+		{{/unless}}
+	</div>
+</template>
