@@ -7,16 +7,21 @@ import "./styles.less";
  * Usage:
  * {{> InlineTextEditComponent name value [allowReturn] [appendText [appendTextClass]]}}
  *
- * allowReturn - if true, component allows pressing Return
- * appendText - add text after the non-editable content
- * appendTextClass - the class of the span to be added
+ * @module /Components/InlineTextEditComponent
+ *
+ * @param {String} name - the HTML textarea name
+ * @param {String} value - current value
+ * @param {Boolean} [allowReturn] - if true, component allows pressing Return
+ * and entering multi-lines
+ * @param {String} [appendText] - add text after the non-editable content
+ * @param {String} [appendTextClass] - the class of the span to be added
  *
  * On entry:
  * - sets "with-inline-editing" to the parent form
  *
  * On key press:
  * - sends submit() to parent form on Enter and closes the edit field
- * - sends reset() to paernt form on Escape and closes the edit field
+ * - sends reset() to parent form on Escape and closes the edit field
  */
 
 const currentTemplate = Template.InlineTextEditComponent;
