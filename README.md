@@ -1,0 +1,1 @@
+meteor-inline-text-edit
