@@ -40,10 +40,10 @@ currentTemplate.onRendered(function() {
 		} else {
 			this.$("div").closest("form").removeClass("with-inline-editing");
 
-			// if(!tracker.firstRun) {
-			// 	// Save current textarea value when editor gets closed
-			// 	this.textareaValue = this.$("textarea").val();
-			// }
+			if(!tracker.firstRun) {
+				// Save current textarea value when editor gets closed
+				this.textareaValue = this.$("textarea").val();
+			}
 		}
 	});
 });
